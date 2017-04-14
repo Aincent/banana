@@ -1,0 +1,54 @@
+* {margin:0; padding:0;}
+
+body {font-family:Helvetica, Arial, sans-serif; font-size:12px; background:#FEFEFE;}
+li {list-style:none;}
+img {display:block; border:none;}
+a {text-decoration:none; color:#000;}
+
+.clear {clear:both;}
+
+.left,
+.mid,
+a.moviesLink span.view,
+a.moviesLink span.star {float:left; display:inline;}
+.right {float:right; display:inline;}
+
+.header {padding-top:80px; background:#404040 url(http://dl.miliroom.com/www/aiai/public/images/logo-548bd5358c.png) no-repeat center 0;}
+.header_tip {border-top:1px solid #464646; line-height:33px; font-size:16px; text-align:center; color:#FF0;}
+
+.movies {margin:0 auto;}
+.slide {padding-top:8px;}
+
+a.moviesLink {float:left; display:inline; overflow:hidden;}
+.moviesCover {position:relative; width:100%;}
+.moviesCover img {display:block; z-index:9; width:100%; height:auto;}
+.moviesCover span,
+.moviesCover em {position:absolute; bottom:3px; z-index:999; display:block; height:17px; line-height:17px; font-size:12px; color:#fff;}
+.moviesCover span.play {left:5px; padding:0 5px 0 27px; background:#e72913; border:solid 1px #c60000; border-radius:2px;}
+.moviesCover span.arrow {left:12px; bottom:5px; width:20px; height:15px; z-index:99999; background:url(http://dl.miliroom.com/www/aiai/public/images/bofang-79a256a5e2.png) no-repeat -16px 0;}
+.moviesCover em {right:5px; width:40px; text-align:center;}
+.moviesCover em.bg {background:#000; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+
+.moviesCover em.em1 {width:70px;}
+a.moviesLink p {clear:both; overflow:hidden; height:25px; line-height:25px;}
+a.moviesLink .status span {color:gray; height:17px; line-height:17px;}
+a.moviesLink span.view {width:35%;}
+a.moviesLink span.star {width:45px; margin-left:4px; background:url(http://dl.miliroom.com/www/aiai/public/images/4-aa88828fd6.gif) repeat-x 0 center;}
+@media screen and (max-width: 600px) {
+	a.moviesLink {width:98%; margin:0 1%;}
+}
+@media screen and (min-width: 601px) {
+	.movies {width:640px;}
+	a.moviesLink {width:308px; margin:0 0 8px 8px;}
+	.weixin-tip img{width:308px; margin:0 0 8px 8px;}
+}
+/*.movies {max-width:300px;}
+a.moviesLink {width:48%; margin:2px 1% 0 1%;}*/
+.slide a.moviesLink {width:98%; margin:0 1%;}
+.footer {background:#212830; text-align:center; padding-bottom:41px;}
+.footer p {border-top:1px solid #464646; line-height:35px; color:#CCC;}
+.footerDown {display:-webkit-box; padding:10px 10px 10px 0;}
+.footerDown a {display:block; -webkit-box-flex:1; line-height:47px; margin-left:10px; background:#3480ff; border:2px solid #bcbcbc; border-radius:7px; color:#FF0; font-size:26px; font-weight:bold; text-align:center;}
+.footerDown a.more {background:#EEE; color:#AAA;}
+a.float {position:fixed; bottom:0; left:0; z-index:99999999; display:block; width:100%; height:40px; line-height:40px; background:#212830; border-top:1px solid #777; color:#FF0; font-size:14px; text-align:center;}
+a.float span {color:#F00;}
